@@ -10,6 +10,8 @@ Built for the Intelligence at Work hackathon with **Snowflake Cortex**, **Claude
 
 **[Watch the 80-second combined demo](demo/output/wayfinder-combined-short.mp4)**
 
+**[Open the timed judge presentation and live-demo guide](demo/judge-kit/index.html)**
+
 ## Demo flow
 
 The included Chile scenario is synthetic and uses sanitized references:
@@ -19,6 +21,8 @@ The included Chile scenario is synthetic and uses sanitized references:
 3. Open any stop to see its saved source document, map, and relevant commute options.
 4. Trigger the labeled 71-minute delay replay. Wayfinder updates the inbound flight and identifies the tighter Santiago connection and affected downstream plans.
 5. Ask the agent to summarize the trip or explain what changed. The answer is grounded in the unified itinerary and reviewed evidence.
+
+For the live presentation, select the five files in `demo/judge-kit/inputs/` together. The app shows one combined review step before creating the itinerary. `demo/judge-kit/PITCH.md` contains the three-minute talk track, and `demo/judge-kit/LIVE-DEMO.md` contains the click-by-click runbook and fallback path.
 
 The repository fixtures contain no real traveler identity, account credentials, or usable booking locators.
 
