@@ -102,7 +102,7 @@ try {
     'data/chile-documents/05-onward-connection.txt',
   ].map(file => path.join(root, file)));
   await page.getByText('5 of 15 added').waitFor({ timeout: 20000 });
-  await sleep(1800);
+  await sleep(800);
 
   await page.evaluate(async () => {
     const id = state.trip.trip.id;
@@ -130,6 +130,10 @@ try {
   await sleep(1700);
   await click(wTrek);
   await page.getByRole('complementary', { name: /Trip details for W Circuit day 2/ }).waitFor();
+  await page.locator('.gm-style').waitFor({ timeout: 15000 });
+  if (await page.getByText('Oops! Something went wrong.', { exact: false }).count()) {
+    throw new Error('Google Maps did not render; check the browser-key origin restriction.');
+  }
   await sleep(4500);
   await page.locator('.place-sheet-body').evaluate(element => element.scrollTo({ top: 330, behavior: 'smooth' }));
   await sleep(2200);
