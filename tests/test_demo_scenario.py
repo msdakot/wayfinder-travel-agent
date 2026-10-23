@@ -180,6 +180,62 @@ class DeterministicDemoScenarioTests(unittest.TestCase):
             server.server_close()
             thread.join(timeout=2)
 
+    def test_browser_api_approval_rewrites_active_itinerary_projection(self):
+        """Proves the option chosen in the phone UI becomes the active journey."""
+        api_store = Store(Path(self.temp.name) / "approval-api-state.db")
+        with socket.socket() as available:
+            available.bind(("127.0.0.1", 0))
+            port = available.getsockname()[1]
+        server = ThreadingHTTPServer(
+            ("127.0.0.1", port),
+            make_handler(api_store, secrets.token_urlsafe(24), port),
+        )
+        thread = threading.Thread(target=server.serve_forever, daemon=True)
+        thread.start()
+        jar = http.cookiejar.CookieJar()
+        browser = urllib.request.build_opener(urllib.request.HTTPCookieProcessor(jar))
+        origin = f"http://127.0.0.1:{port}"
+
+        def post(path, payload):
+            request = urllib.request.Request(
+                origin + path,
+                data=json.dumps(payload).encode(),
+                headers={"Content-Type": "application/json", "Origin": origin},
+                method="POST",
+            )
+            with browser.open(request, timeout=5) as response:
+                return json.load(response)
+
+        try:
+            browser.open(origin + "/", timeout=5).read()
+            created = post("/api/trips", {"title": "Approval demo", "demo": True})
+            trip_id = created["trip"]["id"]
+            delayed = post(
+                f"/api/trips/{trip_id}/replay",
+                {"minutes": 120, "cause": "weather", "event_key": "approval-delay"},
+            )
+            post(
+                f"/api/trips/{trip_id}/approve",
+                {"plan_id": delayed["plan"]["id"], "option_id": "later-train"},
+            )
+            with browser.open(origin + f"/api/trips/{trip_id}", timeout=5) as response:
+                refreshed = json.load(response)
+
+            self.assertEqual(len(refreshed["actions"]), 1)
+            self.assertEqual(refreshed["actions"][0]["option_id"], "later-train")
+            train = refreshed["train_experience"]
+            self.assertEqual(train["original_connection"]["state"], "missed")
+            self.assertEqual(train["status"]["state"], "replacement_selected")
+            self.assertEqual(train["recovery_connection"]["departure_at"], "2026-11-07T21:15:00+00:00")
+            self.assertEqual(train["recovery_connection"]["hotel_arrival"], "2026-11-07T22:30:00+00:00")
+            self.assertEqual(train["recovery_connection"]["cost"], 45)
+            self.assertTrue(train["recovery_connection"]["selected"])
+            self.assertEqual(refreshed["flight_experience"]["affected"]["recovery_status"], "selected")
+        finally:
+            server.shutdown()
+            server.server_close()
+            thread.join(timeout=2)
+
 
 if __name__ == "__main__":
     unittest.main()

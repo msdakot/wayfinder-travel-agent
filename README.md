@@ -6,6 +6,8 @@ Built for the Intelligence at Work hackathon with **Snowflake Cortex**, **Claude
 
 **[Watch the 52-second product demo](demo/output/wayfinder-demo.mp4)**
 
+**[Watch the 25-second recovery-choice demo](demo/output/wayfinder-recovery-demo.mp4)**
+
 ## Demo flow
 
 The included Chile scenario is synthetic and uses sanitized references:
@@ -17,6 +19,8 @@ The included Chile scenario is synthetic and uses sanitized references:
 5. Ask the agent to summarize the trip or explain what changed. The answer is grounded in the unified itinerary and reviewed evidence.
 
 The repository fixtures contain no real traveler identity, account credentials, or usable booking locators.
+
+The second, fictional London scenario focuses on the approval boundary. A two-hour delay breaks the original train connection; the traveler chooses the recommended later train and confirms once. The backend records that decision, marks the original connection missed, promotes the replacement as the active journey, updates the hotel arrival and reminders, and exposes the change in the itinerary and audit history. No provider booking or payment occurs.
 
 ## How it works
 
