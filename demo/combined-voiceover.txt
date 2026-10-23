@@ -1,3 +1,11 @@
-No more searching across emails, PDFs, airline apps, and maps. Wayfinder turns trip documents into one living itinerary. The Chile journey appears across flights, stays, activities, tickets, and mapped stops. It shows how to get there, keeps each source document beside the plan, and monitors the journey. When a delay appears, Wayfinder identifies the tighter connection and explains the downstream impact.
+No more frantically searching across emails, PDFs, airline apps, and maps. Wayfinder turns trip documents into one living itinerary.
 
-An alert should also help you move. In this fictional London recovery example, the original train is no longer reachable. Wayfinder compares alternatives against arrival time, hotel check-in, personal plans, and budget. The traveler chooses the recommended train and confirms once. The old connection is marked missed, the 9:15 replacement becomes active, hotel arrival and reminders update, and the decision stays in trip history. You approve the choice. Wayfinder keeps the journey current.
+Here, five documents create a complete Chile journey across flights, stays, activities, tickets, and mapped stops. Open any plan to see where it is, how to get there, and the source document behind it.
+
+Wayfinder monitors the journey without asking the traveler to enter a delay. When a seventy-one minute delay arrives, the flight updates, the Calama connection becomes tight, and downstream plans are marked for attention. The traveler can ask what changed and receive a concise answer grounded in the unified Snowflake itinerary and reviewed evidence.
+
+An alert should also help the traveler move. In this fictional London recovery example, a delay makes the original train unreachable. Wayfinder compares alternatives against arrival time, hotel check-in, personal plans, and the traveler's spending limit.
+
+The traveler chooses the recommended nine-fifteen train and confirms once. Wayfinder marks the old connection missed, adds the replacement, updates hotel arrival and reminders, and records the decision in trip history.
+
+The traveler stays in control. Wayfinder keeps the whole journey current.

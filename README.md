@@ -8,7 +8,7 @@ Built for the Intelligence at Work hackathon with **Snowflake Cortex**, **Claude
 
 **[Watch the 25-second recovery-choice demo](demo/output/wayfinder-recovery-demo.mp4)**
 
-**[Watch the 57-second combined Short](demo/output/wayfinder-combined-short.mp4)**
+**[Watch the 80-second combined demo](demo/output/wayfinder-combined-short.mp4)**
 
 ## Demo flow
 
