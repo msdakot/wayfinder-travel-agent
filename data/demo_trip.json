@@ -1,0 +1,22 @@
+{
+  "id": "demo-trip",
+  "label": "Synthetic airport-to-hotel journey",
+  "simulation": true,
+  "flight": {"id": "DEMO101", "arrival": "2026-11-07T18:00:00+00:00"},
+  "connection": {"departure": "2026-11-07T19:00:00+00:00", "minimum_transfer_minutes": 45},
+  "hotel": {"check_in_deadline": "2026-11-07T23:00:00+00:00"},
+  "preferences": {"maximum_additional_spend": 120, "currency": "USD"},
+  "alternatives": [
+    {"id": "later-train", "mode": "train", "departure": "2026-11-07T21:15:00+00:00", "hotel_arrival": "2026-11-07T22:30:00+00:00", "cost": 45, "available": true},
+    {"id": "taxi", "mode": "taxi", "departure": "2026-11-07T20:50:00+00:00", "hotel_arrival": "2026-11-07T21:45:00+00:00", "cost": 110, "available": true},
+    {"id": "late-bus", "mode": "bus", "departure": "2026-11-07T21:30:00+00:00", "hotel_arrival": "2026-11-07T23:45:00+00:00", "cost": 20, "available": true}
+  ],
+  "benefit": {
+    "source": "Fictional demo policy, clause 1 — not an actual card benefit",
+    "minimum_delay_minutes": 180,
+    "covered_causes": ["weather", "equipment"],
+    "booking_paid_with_eligible_card": true,
+    "required_evidence": ["Original and revised itinerary", "Booking payment evidence", "Carrier delay reason", "Itemized expense receipts"],
+    "note": "Expense eligibility and administrator approval remain unverified; no alternative is represented as reimbursable."
+  }
+}

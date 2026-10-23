@@ -1,0 +1,9 @@
+WAYFINDER SYNTHETIC DEMO - NOT A REAL BOOKING
+DOCUMENT_TYPE: hotel
+HOTEL_NAME: The Marlow House
+CHECK_IN_DEADLINE: 2026-11-07T23:00:00+00:00
+CHECK_OUT: 2026-11-10T11:00:00+00:00
+BOOKING_REFERENCE: DEMO-HOTEL
+The staffed check-in desk closes at 23:00 on November 7, 2026.
+Arrivals after 23:00 require explicit hotel confirmation; late access is not assumed.
+This hotel and its policies are fictional.

@@ -1,0 +1,6 @@
+DOCUMENT_TYPE: itinerary
+ITEM: {"id":"backpackers-san-pedro","title":"Backpackers San Pedro · stay","start":"2025-12-22T15:00:00-03:00","end":"2025-12-24T20:00:00-03:00","location":"Portal del Inca 486, San Pedro de Atacama, Chile","type":"lodging","flexibility":"fixed"}
+ITEM: {"id":"socaire-checkin","title":"Socaire tour check-in · demo reservation","start":"2025-12-23T07:30:00-03:00","end":"2025-12-23T08:30:00-03:00","location":"Socaire control office, Socaire, Chile (-23.5874448, -67.89106072)","type":"tour","flexibility":"fixed"}
+ITEM: {"id":"piedras-rojas-tour","title":"Piedras Rojas, Miscanti and Miñiques tour","start":"2025-12-23T08:30:00-03:00","end":"2025-12-23T17:00:00-03:00","location":"Socaire and Salar de Aguas Calientes Sur, Antofagasta, Chile","type":"tour","flexibility":"fixed"}
+ITEM: {"id":"yaganhouse","title":"YaganHouse · check-in","start":"2025-12-25T15:00:00-03:00","end":"2025-12-26T11:00:00-03:00","location":"O'Higgins 584, Puerto Natales, Chile","type":"lodging","flexibility":"fixed"}
+ITEM: {"id":"hostel-chumango","title":"Hostel Chuman-Go · overnight stay","start":"2025-12-30T15:00:00-03:00","end":"2025-12-31T10:00:00-03:00","location":"Avenida Santiago Bueras 775, Puerto Natales, Chile","type":"lodging","flexibility":"fixed"}

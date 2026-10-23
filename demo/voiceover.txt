@@ -1,0 +1,11 @@
+No more frantically searching and managing your trip. Wayfinder helps you turn scattered bookings into one living itinerary.
+
+Start a trip by connecting email or adding documents. Here, five confirmations create a complete Chile journey—from flights and hotels to an Atacama tour and the five-day W Circuit.
+
+Every item is mapped in time. Tap any plan to see its real destination, commute choices, and the original ticket or booking document.
+
+Wayfinder keeps watching as you travel. When the Santiago flight is delayed by seventy-one minutes, it immediately checks everything downstream, flags the Calama connection as tight, and shows the exact buffer left.
+
+Ask the agent what changed, and Claude explains the situation using the itinerary and policies stored in Snowflake.
+
+Wayfinder turns travel disruption into one clear decision—so you can keep moving, not keep searching.

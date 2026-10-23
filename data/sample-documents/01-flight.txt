@@ -1,0 +1,15 @@
+WAYFINDER SYNTHETIC DEMO - NOT A REAL BOOKING
+DOCUMENT_TYPE: flight
+FLIGHT_ID: DEMO101
+ROUTE: San Francisco to London Heathrow
+DEPARTURE: 2026-11-06T14:00:00-08:00
+BOARDING_TIME: 2026-11-06T13:15:00-08:00
+ARRIVAL: 2026-11-07T18:00:00+00:00
+TERMINAL: International Terminal
+GATE: A7
+SEAT: 12A
+MINIMUM_TRANSFER_MINUTES: 45
+BOOKING_REFERENCE: DEMO-FLIGHT
+Flight DEMO101 arrives at Heathrow at 18:00 on November 7, 2026.
+Allow 45 minutes after landing before onward departure in this demonstration.
+This fixed buffer is a scenario assumption, not airport guidance.

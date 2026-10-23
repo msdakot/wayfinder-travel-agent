@@ -1,0 +1,8 @@
+WAYFINDER SYNTHETIC DEMO - NOT A LIVE LOYALTY ACCOUNT
+DOCUMENT_TYPE: rewards
+PROGRAM: Atlas Demo Rewards
+BALANCE: 42000
+UNIT: points
+AS_OF: 2026-10-23
+These are 42,000 manually recorded demo points. Redemption pricing and availability
+are unknown. Do not subtract points from a cash fare without a verified redemption.

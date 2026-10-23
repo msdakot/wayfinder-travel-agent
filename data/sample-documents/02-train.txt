@@ -1,0 +1,8 @@
+WAYFINDER SYNTHETIC DEMO - NOT A REAL BOOKING
+DOCUMENT_TYPE: connection
+DEPARTURE: 2026-11-07T19:00:00+00:00
+HOTEL_ARRIVAL: 2026-11-07T20:00:00+00:00
+ROUTE: Heathrow to London hotel via Paddington
+BOOKING_REFERENCE: DEMO-TRAIN
+Your train leaves at 19:00. This fictional ticket is valid only for that departure.
+Switching to a later departure requires a replacement ticket in this demo.

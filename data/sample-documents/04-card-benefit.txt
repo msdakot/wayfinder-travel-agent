@@ -1,0 +1,13 @@
+WAYFINDER SYNTHETIC DEMO - NOT ACTUAL INSURANCE OR CARD TERMS
+DOCUMENT_TYPE: benefit
+POLICY_NAME: Atlas Demo Card - Fictional Trip Delay Policy
+MINIMUM_DELAY_MINUTES: 180
+COVERED_CAUSES: weather,equipment
+BOOKING_PAID_WITH_ELIGIBLE_CARD: true
+Clause 1. For this synthetic example, a recorded arrival delay of at least 180 minutes,
+caused by weather or equipment, and an eligible payment may trigger benefit review.
+Clause 2. Reasonable meals and lodging may be considered after other reimbursements.
+Replacement train fares and taxis are NOT established as covered by this policy.
+Clause 3. Retain original and revised itineraries, payment evidence, a carrier delay
+statement, itemized receipts and evidence of any other reimbursement.
+No payment or eligibility is guaranteed. The benefit administrator must review a claim.

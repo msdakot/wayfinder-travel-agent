@@ -1,0 +1,6 @@
+DOCUMENT_TYPE: itinerary
+ITEM: {"id":"w-day1","title":"W Circuit day 1 · bus to Torres del Paine","start":"2025-12-26T14:00:00-03:00","end":"2025-12-26T19:00:00-03:00","location":"Puerto Natales to Central Mountain Hostel, Torres del Paine","type":"tour","flexibility":"fixed"}
+ITEM: {"id":"w-day2","title":"W Circuit day 2 · Las Torres Base hike","start":"2025-12-27T07:00:00-03:00","end":"2025-12-27T18:00:00-03:00","location":"Las Torres Base, Torres del Paine National Park","type":"tour","flexibility":"fixed"}
+ITEM: {"id":"w-day3","title":"W Circuit day 3 · Francés Sector","start":"2025-12-28T07:00:00-03:00","end":"2025-12-28T18:00:00-03:00","location":"Francés Mountain Hostel, Torres del Paine National Park","type":"tour","flexibility":"fixed"}
+ITEM: {"id":"w-day4","title":"W Circuit day 4 · Francés Valley","start":"2025-12-29T07:00:00-03:00","end":"2025-12-29T18:00:00-03:00","location":"Francés Valley to Paine Grande, Torres del Paine National Park","type":"tour","flexibility":"fixed"}
+ITEM: {"id":"w-day5","title":"W Circuit day 5 · Grey Glacier and Pehoé catamaran","start":"2025-12-30T07:00:00-03:00","end":"2025-12-30T14:00:00-03:00","location":"Grey Glacier lookout and Pehoé Lake, Torres del Paine National Park","type":"tour","flexibility":"fixed"}

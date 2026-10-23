@@ -1,0 +1,35 @@
+{
+  "description": "Deterministic synthetic status sequence for the Wayfinder demo. No live provider data is used.",
+  "updates": [
+    {
+      "event_key": "demo-status-on-time",
+      "delay_minutes": 0,
+      "cause": "weather",
+      "expected": {
+        "status": "original_connection_feasible",
+        "connection_missed": false,
+        "recommended_option": null,
+        "option_count": 0,
+        "persisted_notification_title": "Flight on time",
+        "notification_title": "Flight status changed",
+        "notification_urgent": false
+      }
+    },
+    {
+      "event_key": "demo-status-delayed-120",
+      "delay_minutes": 120,
+      "cause": "weather",
+      "expected": {
+        "status": "recovery_options_found",
+        "connection_missed": true,
+        "recommended_option": "later-train",
+        "option_count": 3,
+        "feasible_options": ["later-train", "taxi"],
+        "rejected_options": ["late-bus"],
+        "persisted_notification_title": "Flight delayed",
+        "notification_title": "Delay affects your onward journey",
+        "notification_urgent": true
+      }
+    }
+  ]
+}

@@ -1,0 +1,46 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+.venv/
+venv/
+
+# Local credentials and service configuration
+.env
+.env.*
+!.env.example
+connections.toml
+*.pem
+*.key
+*.p12
+*.pfx
+
+# Runtime data and traveler uploads
+runtime/
+uploads/
+downloads/
+private/
+*.db
+*.db-*
+*.sqlite
+*.sqlite-*
+*.log
+
+# Generated demo media. Publish only a deliberately reviewed final export.
+recordings/raw/
+demo/output/*.aiff
+demo/output/*.png
+playwright-report/
+test-results/
+
+# Frontend and OS tooling
+node_modules/
+dist/
+.DS_Store
+.idea/
+.vscode/

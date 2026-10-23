@@ -1,0 +1,2 @@
+pypdf==6.1.2
+snowflake-connector-python==5.1.0

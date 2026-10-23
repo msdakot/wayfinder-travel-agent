@@ -1,0 +1,6 @@
+WAYFINDER SYNTHETIC DEMO - NO REAL IDENTITY DATA
+DOCUMENT_TYPE: passport
+HOLDER: Alex Traveler
+EXPIRY_DATE: 2027-03-01
+PASSPORT_MASKED: DEMO-****
+Expiry tracking only. This record does not establish visa or entry eligibility.
