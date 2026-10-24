@@ -20,14 +20,16 @@ In our live demo, five documents create an eighteen-item Chile itinerary. A prov
 
 When recovery is required, Wayfinder compares alternatives against arrival time, hotel check-in, personal plans, policies, and budget. It rejects options that do not work and asks for one approval. The missed connection remains visible, the replacement becomes active, reminders move, and the decision is recorded. Nothing is purchased, canceled, or charged without confirmation.
 
-## 2:15–2:36 — Snowflake and Claude
+## 2:15–2:40 — Snowflake and Claude
 
 Snowflake is the trusted context layer for reviewed itinerary facts, the current disruption state, and searchable policy evidence. Cortex Analyst answers structured questions. Cortex Search retrieves supporting passages. A Cortex Agent powered by Claude connects that evidence into a concise explanation. Deterministic code remains authoritative for timing, feasibility, cost, and approval state.
 
-## 2:36–2:53 — Evaluation
+## 2:40–3:00 — Close
+
+Wayfinder removes the work between an alert and a safe decision. The traveler stays in control, while the whole journey stays current.
+
+## Evaluation appendix — judge Q&A
 
 We test four boundaries: extraction fidelity; impact correctness; grounded answers whose citations stay inside reviewed evidence; and action safety that rejects infeasible, stale, duplicate, or unapproved changes. Our golden check is five documents to eighteen items, then a seventy-one-minute delay to exactly one at-risk connection. Seventy automated tests cover the wider workflow.
 
-## 2:53–3:00 — Close
-
-Wayfinder removes the work between an alert and a safe decision. The traveler stays in control, while the whole journey stays current.
+For Claude on Cortex, golden cases specify expected entities, dependency edges, downstream effects, required citations, forbidden claims, and the correct answer state. We measure entity-linking accuracy, relationship-edge F1, multi-hop and temporal reasoning, counterfactual consistency, citation faithfulness, and abstention. We also score each Cortex stage separately: retrieval Recall@K, tool selection, tool arguments, relationship reasoning, and final-answer grounding.
